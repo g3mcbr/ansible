@@ -1,0 +1,7 @@
+---
+- name: Playbook to do some basic configuration
+  hosts: all
+
+  roles:
+    - base_config
+    - disable_apache

@@ -1,7 +1,10 @@
 #from bitbucket
 - name: adddeployuser
   src: git+git@bitbucket.org:g3mcbr/adddeployuser.git
+#  src: git+https://g3mcbr@bitbucket.org/g3mcbr/adddeployuser.git
 
 - name: base_config
   src: git+git@bitbucket.org:g3mcbr/ansible-roles-base_config.git
-#  src: git+https://g3mcbr@bitbucket.org/g3mcbr/adddeployuser.git
+
+- name: disable_apache
+  src: git+git@bitbucket.org:g3mcbr/ansible-roles-disable_apache.git
