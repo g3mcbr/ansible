@@ -1,6 +1,6 @@
 ---
 - name: Playbook to powerup centos vms
-  hosts: mac
+  hosts: all
   gather_facts: false
   become: false
   vars:
