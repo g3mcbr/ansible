@@ -1,0 +1,16 @@
+---
+- name: Playbook to create 'deploy' user on all managed nodes
+  hosts: all
+
+  pre_tasks:
+    - name: Pre-tasks
+      debug:
+        msg: Placeholder for a pre-task
+
+    - name: Post-tasks
+      debug:
+        msg: Placeholder for a post-task
+
+  roles:
+    - adddeployuser
+
