@@ -1,3 +1,4 @@
 #from bitbucket
 - name: adddeployuser
-  src: git+https://g3mcbr@bitbucket.org/g3mcbr/adddeployuser.git
+  src: git+git@bitbucket.org:g3mcbr/adddeployuser.git
+#  src: git+https://g3mcbr@bitbucket.org/g3mcbr/adddeployuser.git
