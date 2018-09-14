@@ -1,0 +1,10 @@
+- name: Play to shutdown all centos machines
+  hosts: all
+  become: true
+  gather_facts: false
+   
+  tasks:
+    - name: Shutdown machines
+      shell: sleep 5; systemctl poweroff
+      ignore_errors: true
+

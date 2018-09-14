@@ -1,0 +1,19 @@
+---
+- name: Playbook to powerup centos vms
+  hosts: mac
+  gather_facts: false
+  become: false
+  vars:
+    centos_vms: 
+    user: 
+
+  tasks:
+    - name: Run vmrun command to start vms
+      shell: "'/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion start /Users/{{ user }}/Documents/'Virtual Machines.localized/'{{ item }}.vmwarevm"
+      with_items:
+        - "{{ centos_vms }}"
+      register: vmrun_result
+
+    - name: Display vmrun result
+      debug:
+        var: vmrun_result
